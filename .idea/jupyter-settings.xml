@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JupyterPersistentConnectionParameters">
+    <option name="knownRemoteServers">
+      <list>
+        <JupyterConnectionParameters>
+          <option name="authType" value="notebook" />
+          <option name="token" value="ecd45691350986b005d95ccc21732581b63ad0d3f40f1f83" />
+          <option name="urlString" value="http://localhost:8888/" />
+          <authParams2>
+            <map>
+              <entry key="token" value="ecd45691350986b005d95ccc21732581b63ad0d3f40f1f83" />
+            </map>
+          </authParams2>
+        </JupyterConnectionParameters>
+      </list>
+    </option>
+    <option name="moduleParameters">
+      <map>
+        <entry key="D:/Arbeit/DataUtils/.idea/DataUtils.iml">
+          <value>
+            <JupyterConnectionParameters>
+              <option name="managed" value="true" />
+            </JupyterConnectionParameters>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

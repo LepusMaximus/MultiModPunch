@@ -66,7 +66,7 @@ class punch_data:
         plt.ylabel("Thickness")
         plt.show()
 
-    def plot_hist_thickness(self, all=True, coil1=False, coil2=False, same=False):
+    def plot_kde_thickness(self, all=True, coil1=False, coil2=False, same=False):
         if all:
             plt.title("Coil1+Coil2")
             self.data.Thickness.plot.kde()
