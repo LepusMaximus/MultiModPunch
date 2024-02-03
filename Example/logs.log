@@ -1,0 +1,722 @@
+2024-02-03 20:14:41,839:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:41,839:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:41,839:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:41,839:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:42,286:INFO:PyCaret ClassificationExperiment
+2024-02-03 20:14:42,286:INFO:Logging name: clf-default-name
+2024-02-03 20:14:42,286:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-02-03 20:14:42,286:INFO:version 3.2.0
+2024-02-03 20:14:42,286:INFO:Initializing setup()
+2024-02-03 20:14:42,286:INFO:self.USI: a46b
+2024-02-03 20:14:42,286:INFO:self._variable_keys: {'y_test', 'X_train', 'target_param', '_ml_usecase', 'n_jobs_param', 'gpu_n_jobs_param', 'gpu_param', 'is_multiclass', 'idx', 'exp_id', 'fold_generator', 'USI', 'y', 'X_test', 'data', 'exp_name_log', 'fold_shuffle_param', 'fold_groups_param', 'memory', 'fix_imbalance', 'html_param', 'logging_param', 'X', 'log_plots_param', 'y_train', 'pipeline', '_available_plots', 'seed'}
+2024-02-03 20:14:42,286:INFO:Checking environment
+2024-02-03 20:14:42,286:INFO:python_version: 3.9.18
+2024-02-03 20:14:42,286:INFO:python_build: ('main', 'Dec 23 2023 16:33:10')
+2024-02-03 20:14:42,286:INFO:machine: x86_64
+2024-02-03 20:14:42,286:INFO:platform: Linux-5.15.0-92-generic-x86_64-with-glibc2.31
+2024-02-03 20:14:42,287:INFO:Memory: svmem(total=67316088832, available=36894244864, percent=45.2, used=29574426624, free=20729446400, active=7777460224, inactive=35237109760, buffers=1876701184, cached=15135514624, shared=126271488, slab=2833448960)
+2024-02-03 20:14:42,288:INFO:Physical Core: 12
+2024-02-03 20:14:42,288:INFO:Logical Core: 24
+2024-02-03 20:14:42,288:INFO:Checking libraries
+2024-02-03 20:14:42,288:INFO:System:
+2024-02-03 20:14:42,288:INFO:    python: 3.9.18 | packaged by conda-forge | (main, Dec 23 2023, 16:33:10)  [GCC 12.3.0]
+2024-02-03 20:14:42,288:INFO:executable: /home/maxi/anaconda3/envs/pycaret/bin/python3.9
+2024-02-03 20:14:42,288:INFO:   machine: Linux-5.15.0-92-generic-x86_64-with-glibc2.31
+2024-02-03 20:14:42,288:INFO:PyCaret required dependencies:
+2024-02-03 20:14:42,565:INFO:                 pip: 23.3.2
+2024-02-03 20:14:42,565:INFO:          setuptools: 68.2.2
+2024-02-03 20:14:42,565:INFO:             pycaret: 3.2.0
+2024-02-03 20:14:42,565:INFO:             IPython: 8.18.1
+2024-02-03 20:14:42,565:INFO:          ipywidgets: 8.1.1
+2024-02-03 20:14:42,565:INFO:                tqdm: 4.66.1
+2024-02-03 20:14:42,565:INFO:               numpy: 1.25.2
+2024-02-03 20:14:42,565:INFO:              pandas: 1.5.3
+2024-02-03 20:14:42,565:INFO:              jinja2: 3.1.2
+2024-02-03 20:14:42,565:INFO:               scipy: 1.10.1
+2024-02-03 20:14:42,565:INFO:              joblib: 1.3.2
+2024-02-03 20:14:42,565:INFO:             sklearn: 1.2.2
+2024-02-03 20:14:42,565:INFO:                pyod: 1.1.2
+2024-02-03 20:14:42,565:INFO:            imblearn: 0.11.0
+2024-02-03 20:14:42,565:INFO:   category_encoders: 2.6.3
+2024-02-03 20:14:42,565:INFO:            lightgbm: 4.2.0
+2024-02-03 20:14:42,565:INFO:               numba: 0.58.1
+2024-02-03 20:14:42,565:INFO:            requests: 2.31.0
+2024-02-03 20:14:42,565:INFO:          matplotlib: 3.6.0
+2024-02-03 20:14:42,565:INFO:          scikitplot: 0.3.7
+2024-02-03 20:14:42,565:INFO:         yellowbrick: 1.5
+2024-02-03 20:14:42,565:INFO:              plotly: 5.18.0
+2024-02-03 20:14:42,566:INFO:    plotly-resampler: Not installed
+2024-02-03 20:14:42,566:INFO:             kaleido: 0.2.1
+2024-02-03 20:14:42,566:INFO:           schemdraw: 0.15
+2024-02-03 20:14:42,566:INFO:         statsmodels: 0.14.1
+2024-02-03 20:14:42,566:INFO:              sktime: 0.21.1
+2024-02-03 20:14:42,566:INFO:               tbats: 1.1.3
+2024-02-03 20:14:42,566:INFO:            pmdarima: 2.0.4
+2024-02-03 20:14:42,566:INFO:              psutil: 5.9.7
+2024-02-03 20:14:42,566:INFO:          markupsafe: 2.1.3
+2024-02-03 20:14:42,566:INFO:             pickle5: Not installed
+2024-02-03 20:14:42,566:INFO:         cloudpickle: 2.2.1
+2024-02-03 20:14:42,566:INFO:         deprecation: 2.1.0
+2024-02-03 20:14:42,566:INFO:              xxhash: 3.4.1
+2024-02-03 20:14:42,566:INFO:           wurlitzer: 3.0.3
+2024-02-03 20:14:42,566:INFO:PyCaret optional dependencies:
+2024-02-03 20:14:43,464:INFO:                shap: 0.44.0
+2024-02-03 20:14:43,464:INFO:           interpret: 0.5.0
+2024-02-03 20:14:43,464:INFO:                umap: 0.5.5
+2024-02-03 20:14:43,464:INFO:     ydata_profiling: 4.6.0
+2024-02-03 20:14:43,464:INFO:  explainerdashboard: 0.4.5
+2024-02-03 20:14:43,464:INFO:             autoviz: Not installed
+2024-02-03 20:14:43,464:INFO:           fairlearn: 0.7.0
+2024-02-03 20:14:43,464:INFO:          deepchecks: Not installed
+2024-02-03 20:14:43,464:INFO:             xgboost: 2.0.3
+2024-02-03 20:14:43,464:INFO:            catboost: 1.2.2
+2024-02-03 20:14:43,464:INFO:              kmodes: 0.12.2
+2024-02-03 20:14:43,464:INFO:             mlxtend: 0.23.1
+2024-02-03 20:14:43,464:INFO:       statsforecast: 1.5.0
+2024-02-03 20:14:43,464:INFO:        tune_sklearn: 0.5.0
+2024-02-03 20:14:43,464:INFO:                 ray: 2.9.0
+2024-02-03 20:14:43,464:INFO:            hyperopt: 0.2.7
+2024-02-03 20:14:43,464:INFO:              optuna: 3.5.0
+2024-02-03 20:14:43,464:INFO:               skopt: 0.9.0
+2024-02-03 20:14:43,464:INFO:              mlflow: 1.30.1
+2024-02-03 20:14:43,464:INFO:              gradio: 3.50.2
+2024-02-03 20:14:43,464:INFO:             fastapi: 0.88.0
+2024-02-03 20:14:43,464:INFO:             uvicorn: 0.25.0
+2024-02-03 20:14:43,464:INFO:              m2cgen: 0.10.0
+2024-02-03 20:14:43,464:INFO:           evidently: 0.2.8
+2024-02-03 20:14:43,464:INFO:               fugue: 0.8.6
+2024-02-03 20:14:43,464:INFO:           streamlit: Not installed
+2024-02-03 20:14:43,464:INFO:             prophet: Not installed
+2024-02-03 20:14:43,464:INFO:None
+2024-02-03 20:14:43,464:INFO:Set up GPU usage.
+2024-02-03 20:14:43,464:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:43,464:WARNING:cuML is outdated or not found. Required version is >=23.08.
+                Please visit https://rapids.ai/install for installation instructions.
+2024-02-03 20:14:43,464:INFO:Set up data.
+2024-02-03 20:14:43,976:INFO:Set up folding strategy.
+2024-02-03 20:14:43,976:INFO:Set up train/test split.
+2024-02-03 20:14:44,106:INFO:Set up index.
+2024-02-03 20:14:44,106:INFO:Assigning column types.
+2024-02-03 20:14:44,173:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-02-03 20:14:44,174:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,200:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-03 20:14:44,200:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,201:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,201:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-02-03 20:14:44,201:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,216:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,219:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,220:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-02-03 20:14:44,484:INFO:Soft dependency imported: catboost: 1.2.2
+2024-02-03 20:14:44,537:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,572:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-02-03 20:14:44,572:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,573:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,573:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-02-03 20:14:44,573:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,595:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,598:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,599:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-02-03 20:14:44,660:INFO:Soft dependency imported: catboost: 1.2.2
+2024-02-03 20:14:44,661:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-02-03 20:14:44,661:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,687:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,687:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,688:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-02-03 20:14:44,688:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,701:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,703:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,704:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-02-03 20:14:44,773:INFO:Soft dependency imported: catboost: 1.2.2
+2024-02-03 20:14:44,774:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,806:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,807:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,807:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-02-03 20:14:44,807:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,824:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,826:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,827:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-02-03 20:14:44,902:INFO:Soft dependency imported: catboost: 1.2.2
+2024-02-03 20:14:44,903:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-02-03 20:14:44,903:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,929:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,930:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,930:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,943:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,946:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:44,947:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-02-03 20:14:45,012:INFO:Soft dependency imported: catboost: 1.2.2
+2024-02-03 20:14:45,012:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:45,044:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:45,044:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:45,044:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:45,058:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:45,061:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:45,062:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-02-03 20:14:45,134:INFO:Soft dependency imported: catboost: 1.2.2
+2024-02-03 20:14:45,144:INFO:Preparing preprocessing pipeline...
+2024-02-03 20:14:45,170:INFO:Set up label encoding.
+2024-02-03 20:14:45,170:INFO:Set up simple imputation.
+2024-02-03 20:14:45,479:INFO:Finished creating preprocessing pipeline.
+2024-02-03 20:14:45,489:INFO:Pipeline: Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None,
+                                               transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Thickness', 'imPCA_0', 'imPCA_1',
+                                             'imPCA_2', 'imPCA_3', 'imPCA_4',
+                                             'imPCA_5', 'imPCA_6', 'imPCA_7',
+                                             'imPCA_8', 'imPCA_9', 'imPCA_10',
+                                             'imPCA...
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean',
+                                                              verbose='deprecated'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent',
+                                                              verbose='deprecated')))],
+         verbose=False)
+2024-02-03 20:14:45,489:INFO:Creating final display dataframe.
+2024-02-03 20:14:46,264:INFO:Setup _display_container:                     Description  \
+0                    Session id   
+1                        Target   
+2                   Target type   
+3                Target mapping   
+4           Original data shape   
+5        Transformed data shape   
+6   Transformed train set shape   
+7    Transformed test set shape   
+8               Ignore features   
+9              Numeric features   
+10                   Preprocess   
+11              Imputation type   
+12           Numeric imputation   
+13       Categorical imputation   
+14               Fold Generator   
+15                  Fold Number   
+16                     CPU Jobs   
+17                      Use GPU   
+18               Log Experiment   
+19              Experiment Name   
+20                          USI   
+
+                                              Value  
+0                                               123  
+1                                            Labels  
+2                                        Multiclass  
+3   failure: 0, initial_wear: 1, normal: 2, wear: 3  
+4                                     (11921, 2330)  
+5                                     (11921, 2330)  
+6                                      (9536, 2330)  
+7                                      (2385, 2330)  
+8                                                 1  
+9                                              2329  
+10                                             True  
+11                                           simple  
+12                                             mean  
+13                                             mode  
+14                                  StratifiedKFold  
+15                                                5  
+16                                               -1  
+17                                             True  
+18                                            False  
+19                                 clf-default-name  
+20                                             a46b  
+2024-02-03 20:14:46,268:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:46,294:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:46,295:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:46,295:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:46,308:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:46,311:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:46,311:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-02-03 20:14:46,383:INFO:Soft dependency imported: catboost: 1.2.2
+2024-02-03 20:14:46,383:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:46,410:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:46,411:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:46,411:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:46,425:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:46,428:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-02-03 20:14:46,428:INFO:Soft dependency imported: xgboost: 2.0.3
+2024-02-03 20:14:46,494:INFO:Soft dependency imported: catboost: 1.2.2
+2024-02-03 20:14:46,495:INFO:setup() successfully completed in 4.21s...............
+2024-02-03 20:20:20,523:INFO:Initializing compare_models()
+2024-02-03 20:20:20,523:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fbb2dff0c10>, include=['svm', 'lr', 'knn'], fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x7fbb2dff0c10>, 'include': ['svm', 'lr', 'knn'], 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2024-02-03 20:20:20,523:INFO:Checking exceptions
+2024-02-03 20:20:20,581:INFO:Preparing display monitor
+2024-02-03 20:20:20,595:INFO:Initializing SVM - Linear Kernel
+2024-02-03 20:20:20,595:INFO:Total runtime is 1.6808509826660156e-06 minutes
+2024-02-03 20:20:20,597:INFO:SubProcess create_model() called ==================================
+2024-02-03 20:20:20,597:INFO:Initializing create_model()
+2024-02-03 20:20:20,597:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fbb2dff0c10>, estimator=svm, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fbb2dfa57c0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-03 20:20:20,597:INFO:Checking exceptions
+2024-02-03 20:20:20,597:INFO:Importing libraries
+2024-02-03 20:20:20,597:INFO:Copying training dataset
+2024-02-03 20:20:20,692:INFO:Defining folds
+2024-02-03 20:20:20,692:INFO:Declaring metric variables
+2024-02-03 20:20:20,695:INFO:Importing untrained model
+2024-02-03 20:20:20,697:INFO:SVM - Linear Kernel Imported successfully
+2024-02-03 20:20:20,700:INFO:Starting cross validation
+2024-02-03 20:20:20,705:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-02-03 20:20:21,253:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2024-02-03 20:20:21,259:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:21,271:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:21,282:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:21,836:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2024-02-03 20:20:21,841:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:21,851:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:21,862:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:22,375:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2024-02-03 20:20:22,379:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:22,390:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:22,401:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:22,936:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2024-02-03 20:20:22,940:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:22,951:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:22,961:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:23,527:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/pycaret/internal/metrics.py:190: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/pycaret/internal/metrics.py", line 182, in _score
+    return super()._score(
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/pycaret/internal/pipeline.py", line 127, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/utils/_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/linear_model/_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2024-02-03 20:20:23,531:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:23,542:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:23,553:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:23,567:INFO:Calculating mean and std
+2024-02-03 20:20:23,568:INFO:Creating metrics dataframe
+2024-02-03 20:20:23,571:INFO:Uploading results into container
+2024-02-03 20:20:23,571:INFO:Uploading model into container now
+2024-02-03 20:20:23,572:INFO:_master_model_container: 1
+2024-02-03 20:20:23,572:INFO:_display_container: 2
+2024-02-03 20:20:23,572:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=123, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2024-02-03 20:20:23,572:INFO:create_model() successfully completed......................................
+2024-02-03 20:20:23,806:INFO:SubProcess create_model() end ==================================
+2024-02-03 20:20:23,806:INFO:Creating metrics dataframe
+2024-02-03 20:20:23,812:INFO:Initializing Logistic Regression
+2024-02-03 20:20:23,812:INFO:Total runtime is 0.053617914517720536 minutes
+2024-02-03 20:20:23,814:INFO:SubProcess create_model() called ==================================
+2024-02-03 20:20:23,815:INFO:Initializing create_model()
+2024-02-03 20:20:23,815:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fbb2dff0c10>, estimator=lr, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fbb2dfa57c0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-03 20:20:23,815:INFO:Checking exceptions
+2024-02-03 20:20:23,815:INFO:Importing libraries
+2024-02-03 20:20:23,815:INFO:Copying training dataset
+2024-02-03 20:20:23,905:INFO:Defining folds
+2024-02-03 20:20:23,906:INFO:Declaring metric variables
+2024-02-03 20:20:23,908:INFO:Importing untrained model
+2024-02-03 20:20:23,910:INFO:Logistic Regression Imported successfully
+2024-02-03 20:20:23,914:INFO:Starting cross validation
+2024-02-03 20:20:23,918:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-02-03 20:20:25,596:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:25,607:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:25,618:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:27,083:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:27,094:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:27,105:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:28,675:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:28,686:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:28,697:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:30,255:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:30,266:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:30,277:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:31,731:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:31,742:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:31,753:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:31,768:INFO:Calculating mean and std
+2024-02-03 20:20:31,769:INFO:Creating metrics dataframe
+2024-02-03 20:20:31,772:INFO:Uploading results into container
+2024-02-03 20:20:31,772:INFO:Uploading model into container now
+2024-02-03 20:20:31,772:INFO:_master_model_container: 2
+2024-02-03 20:20:31,773:INFO:_display_container: 2
+2024-02-03 20:20:31,773:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=123, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2024-02-03 20:20:31,773:INFO:create_model() successfully completed......................................
+2024-02-03 20:20:32,005:INFO:SubProcess create_model() end ==================================
+2024-02-03 20:20:32,005:INFO:Creating metrics dataframe
+2024-02-03 20:20:32,012:INFO:Initializing K Neighbors Classifier
+2024-02-03 20:20:32,012:INFO:Total runtime is 0.1902771830558777 minutes
+2024-02-03 20:20:32,014:INFO:SubProcess create_model() called ==================================
+2024-02-03 20:20:32,014:INFO:Initializing create_model()
+2024-02-03 20:20:32,014:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fbb2dff0c10>, estimator=knn, fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7fbb2dfa57c0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-03 20:20:32,014:INFO:Checking exceptions
+2024-02-03 20:20:32,014:INFO:Importing libraries
+2024-02-03 20:20:32,014:INFO:Copying training dataset
+2024-02-03 20:20:32,106:INFO:Defining folds
+2024-02-03 20:20:32,106:INFO:Declaring metric variables
+2024-02-03 20:20:32,109:INFO:Importing untrained model
+2024-02-03 20:20:32,111:INFO:K Neighbors Classifier Imported successfully
+2024-02-03 20:20:32,115:INFO:Starting cross validation
+2024-02-03 20:20:32,120:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=1
+2024-02-03 20:20:33,488:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:33,495:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:33,503:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:34,590:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:34,611:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:34,623:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:35,656:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:35,676:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:35,688:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:36,720:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:36,744:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:36,754:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:37,845:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:37,852:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:37,859:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1396: UserWarning: Note that pos_label (set to 'wear') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-02-03 20:20:37,869:INFO:Calculating mean and std
+2024-02-03 20:20:37,871:INFO:Creating metrics dataframe
+2024-02-03 20:20:37,873:INFO:Uploading results into container
+2024-02-03 20:20:37,874:INFO:Uploading model into container now
+2024-02-03 20:20:37,874:INFO:_master_model_container: 3
+2024-02-03 20:20:37,874:INFO:_display_container: 2
+2024-02-03 20:20:37,874:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2024-02-03 20:20:37,874:INFO:create_model() successfully completed......................................
+2024-02-03 20:20:38,112:INFO:SubProcess create_model() end ==================================
+2024-02-03 20:20:38,112:INFO:Creating metrics dataframe
+2024-02-03 20:20:38,123:INFO:Initializing create_model()
+2024-02-03 20:20:38,124:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fbb2dff0c10>, estimator=SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=123, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False), fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-02-03 20:20:38,124:INFO:Checking exceptions
+2024-02-03 20:20:38,125:INFO:Importing libraries
+2024-02-03 20:20:38,125:INFO:Copying training dataset
+2024-02-03 20:20:38,227:INFO:Defining folds
+2024-02-03 20:20:38,227:INFO:Declaring metric variables
+2024-02-03 20:20:38,227:INFO:Importing untrained model
+2024-02-03 20:20:38,227:INFO:Declaring custom model
+2024-02-03 20:20:38,227:INFO:SVM - Linear Kernel Imported successfully
+2024-02-03 20:20:38,232:INFO:Cross validation set to False
+2024-02-03 20:20:38,232:INFO:Fitting Model
+2024-02-03 20:20:38,757:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=123, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2024-02-03 20:20:38,757:INFO:create_model() successfully completed......................................
+2024-02-03 20:20:39,016:INFO:_master_model_container: 3
+2024-02-03 20:20:39,016:INFO:_display_container: 2
+2024-02-03 20:20:39,016:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=123, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2024-02-03 20:20:39,016:INFO:compare_models() successfully completed......................................
+2024-02-03 20:23:26,162:INFO:Initializing plot_model()
+2024-02-03 20:23:26,162:INFO:plot_model(plot=confusion_matrix, fold=None, verbose=True, display=None, display_format=None, estimator=SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=123, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fbb2dff0c10>, system=True)
+2024-02-03 20:23:26,162:INFO:Checking exceptions
+2024-02-03 20:23:26,196:INFO:Preloading libraries
+2024-02-03 20:23:26,197:INFO:Copying training dataset
+2024-02-03 20:23:26,197:INFO:Plot type: confusion_matrix
+2024-02-03 20:23:26,711:INFO:Fitting Model
+2024-02-03 20:23:26,719:WARNING:/home/maxi/anaconda3/envs/pycaret/lib/python3.9/site-packages/sklearn/base.py:439: UserWarning: X does not have valid feature names, but SGDClassifier was fitted with feature names
+  warnings.warn(
+
+2024-02-03 20:23:26,720:INFO:Scoring test/hold-out set
+2024-02-03 20:23:26,906:INFO:Visual Rendered Successfully
+2024-02-03 20:23:27,150:INFO:plot_model() successfully completed......................................
+2024-02-03 20:23:37,212:INFO:Initializing plot_model()
+2024-02-03 20:23:37,213:INFO:plot_model(plot=auc, fold=None, verbose=True, display=None, display_format=None, estimator=SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=123, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fbb2dff0c10>, system=True)
+2024-02-03 20:23:37,213:INFO:Checking exceptions
+2024-02-03 20:23:43,807:INFO:Initializing plot_model()
+2024-02-03 20:23:43,808:INFO:plot_model(plot=feature, fold=None, verbose=True, display=None, display_format=None, estimator=SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=123, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fbb2dff0c10>, system=True)
+2024-02-03 20:23:43,808:INFO:Checking exceptions
+2024-02-03 20:23:43,842:INFO:Preloading libraries
+2024-02-03 20:23:43,843:INFO:Copying training dataset
+2024-02-03 20:23:43,843:INFO:Plot type: feature
+2024-02-03 20:23:44,325:INFO:Visual Rendered Successfully
+2024-02-03 20:23:44,568:INFO:plot_model() successfully completed......................................
