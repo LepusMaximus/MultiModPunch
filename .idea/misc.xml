@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="pycaret" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="pycaret" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="fiftyone" project-jdk-type="Python SDK" />
 </project>
