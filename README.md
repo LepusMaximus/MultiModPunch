@@ -1,6 +1,20 @@
 # MultiModPunch
 Benchmarking Data-Driven Approaches in Industrial Punching: A multi-modal Dataset
 
+Dataset: [Zenodo-Link](https://doi.org/10.5281/zenodo.14782454)
+
+## Citation Notice
+
+If you use this dataset, please cite it as follows:
+
+**Author(s):**           Lorenz, M.  
+**Title:**             Benchmarking machine learning approaches in Industrial Punching: A multi-modal Dataset   
+**Year:**       2025  
+**DOI / URL:**       https://doi.org/10.5281/zenodo.14782454  
+
+
+Example citation (APA format):  
+Lorenz, M. (2025). Benchmarking machine learning approaches in Industrial Punching: A multi-modal Dataset (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.14782454
 
 ## Load LookUp
 ```python
